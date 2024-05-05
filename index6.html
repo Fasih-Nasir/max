@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fn1()">Find A Max Charecter </button>
+    <button onclick="fn2()">Find A Min Charecter </button>
+    <script>
+        function fn1(){
+        var pr=prompt("Find a Max chacrecter ");
+        var c=pr[0]
+for(let i=0;i<pr.length;i++){
+var b=pr[i]
+document.write(b)
+if(b > c){
+    c=b
+
+}
+
+}
+var ch=pr.replaceAll(c,`<mark>${c}</mark>`)
+document.write("<br>"+ch)
+}
+function fn2(){
+        var name=prompt("Find a Max chacrecter ");
+        var ch=name[0]
+        for(let i=0;i<name.length;i++){
+        let b=name[i]
+        if(ch > b){
+            ch=b;
+        }
+        }
+
+        var ch=name.replaceAll(ch,`<mark>${ch}</mark>`)
+        document.write(ch)
+    }
+            </script>
+</body>
+</html>
